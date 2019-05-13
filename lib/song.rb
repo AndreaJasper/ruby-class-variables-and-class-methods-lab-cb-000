@@ -10,7 +10,7 @@ class Song
     @genre = genre
     @artist = artist
     @@count += 1
-    @@artist << artist
+    @@artists << artist
     @@genres << genre
   end
 
@@ -22,7 +22,7 @@ class Song
     genres = []
     @@genres.each do |genre|
       if genres.include? genre
-        genre
+        genres
       else
         genres << genre
       end
@@ -34,11 +34,11 @@ class Song
     artists = []
     @@artists.each do |artist|
       if artists.include? artist
-        artist
+        artists
       else
         artists << artist
       end
   end
-  artist
+  artists
   end
 end
